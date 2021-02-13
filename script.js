@@ -5,7 +5,7 @@ else
     info = JSON.parse(localStorage.getItem("info"));
 
 function updateArray(){
-    var curr = "<p>" + document.getElementById("first") + "</p>" + "<p>" + document.getElementById("last") + "</p>" + "<p>" + document.getElementById("dob") + "</p>";
+    var curr = "<p>" + document.getElementById("first").value + "</p>" + "<p>" + document.getElementById("last") + "</p>" + "<p>" + document.getElementById("dob") + "</p>";
     info.push(curr);
     localStorage.setItem("info", JSON.stringify(info));
     alert("Succesfully submited!");
@@ -21,4 +21,4 @@ function myFunction() {
     } else {
       navbar.classList.remove("sticky");
     }
-  }
+}
