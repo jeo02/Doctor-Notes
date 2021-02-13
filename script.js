@@ -9,7 +9,7 @@ function updateArray(){
     + " <b>Patient ID:</b> " + document.getElementById("pid").value + "<br><b>Gender:</b> " + document.getElementById("gender").value + " <b>Ethnicity:</b> " + document.getElementById("ethnicity").value 
     + "<br><b>Race:</b> " + document.getElementById("race").value + " <b>Height:</b> " + document.getElementById("height").value + "ft <b>Weight:</b> " + document.getElementById("weight").value + " lbs"
     + "<br><b>Address:</b> " + document.getElementById("address").value + ", " + document.getElementById("city").value + ", " + document.getElementById("state").value + " " + document.getElementById("zip").value
-    + "<br><b>Email:</b> " + document.getElementById("email").value + " <b>Cellphone:</b> " + document.getElementById("cell").value + "</p>" + "<p>" + document.getElementById("notes").value + "</p></div>";
+    + "<br><b>Email:</b> " + document.getElementById("email").value + " <b>Cellphone:</b> " + document.getElementById("cell").value + "</p>" + "<p><b>Patient Notes:</b> " + document.getElementById("notes").value + "</p></div>";
     
     info.push(curr);
     localStorage.setItem("info", JSON.stringify(info));
