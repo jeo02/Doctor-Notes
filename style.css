@@ -69,6 +69,7 @@ a:hover{
 .innerPage{
     display: grid;
     grid-template-columns: 50% 50%;
+    text-align: left;
 }
 
 .innerP{
