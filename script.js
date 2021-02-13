@@ -27,11 +27,50 @@ function updateArray(){
         document.getElementById("form").reset();
     }
     else{
-        alert("Please enter all the required fields.");
+        alert("Please enter all the required* fields.");
     }
-    
-    
 }
+//Sorts patients by last name
+function sortLastName() {
+    var sortedLast = new Array();
+    info = mergeSort(info);
+}
+
+function merge(left, right){
+    let arr = [];
+
+    //if one of the sides is empty you exit the loop
+    while(left.length && right.length){
+        //get the smallest
+        if(left[0] < right[0]){
+            arr.push(left.shift())
+        }
+        else{
+            arr.push(right.shift())
+        }
+    }
+
+    //concatenating leftover elements in case it didnt fully go through left or right
+    return[...arr, ...left, ...right];
+}
+
+function mergeSort(array)
+{
+    const half = array.length/2;
+
+    //base case
+    if(array.length < 2)
+        return array;
+    
+    const left = array.splice(0, half);
+    return merge(mergeSort(left), mergeSort(array));
+}
+
+//Sorts patients by ID
+function sortID() {
+
+}
+
 
 function resetList(){
     localStorage.clear();
