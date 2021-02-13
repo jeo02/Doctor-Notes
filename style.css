@@ -1,15 +1,9 @@
-.navBar {
-body {
-    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-}
-
-ul {
+.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -24,9 +18,6 @@ ul {
     text-decoration: none;
 }
 
-body{
-    background-image: url("https://i.pinimg.com/originals/9d/a7/aa/9da7aaf50833e6a0580c7ebea92f4a06.png")
-}
 footer {
     text-align: center;
     color: white;
