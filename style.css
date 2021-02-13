@@ -44,7 +44,7 @@ a {
     color: #20639b;
 }
 
-#active {
+.active {
     color: white;
 }
 a:hover{
