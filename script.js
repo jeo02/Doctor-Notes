@@ -54,11 +54,11 @@ function printPatientInfo(){
 
 function bubbleSort(last) 
 {
+    alert("hi");
     for(var i = 1; i < info.length; i++)
     {
         for(var j = info.length; j < 1; j--)
         {
-            alert("hi");
             var arrSplit = sorters[i-1].split(" * ");
             var arrSplit2 = sorters[i].split(" * ");
             if(last)
