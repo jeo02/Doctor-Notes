@@ -18,26 +18,26 @@
             <h1>Patient Information</h1>
             <form id = "form">
                 <label for="first">First Name:</label>
-                <input type="text" id="first" name="first"><br>
+                <input class = "required" type="text" id="first" name="first"><br>
                 <label for="last">Last Name:</label>
-                <input type="text" id="last" name="last"><br>
+                <input class = "required" type="text" id="last" name="last"><br>
                 <label for="dob">Date of Birth (enter as "MM/DD/YYYY"):</label>
-                <input type="text" id="dob" name="dob"><br>
+                <input class = "required" type="text" id="dob" name="dob"><br>
                 <label for = "gender">Gender:</label>
-                <select id = "gender" name = "gender">
+                <select class = "required" id = "gender" name = "gender">
                     <option value = "Prefer Not to Say">Prefer Not to Say</option>
                     <option value = "Male">Male</option>
                     <option value = "Female">Female</option>
                     <option value = "Non-Binary">Non-Binary</option>
                 </select>
                 <label for="pid">Patient ID:</label>
-                <input type="text" id="pid" name="pid"><br>
+                <input class = "required" type="text" id="pid" name="pid"><br>
                 <label for="address">Home Address:</label>
-                <input type="text" id="address" name="address"><br>
+                <input class = "required" type="text" id="address" name="address"><br>
                 <label for="city">City</label>
-                <input type="text" id="city" name="city">
+                <input class = "required" type="text" id="city" name="city">
                 <label for="state">State:</label>
-                <select id="state" name="state">
+                <select class = "required" id="state" name="state">
                     <option value = "select">--SELECT--</option>
                     <option value = "AL">AL</option>
                     <option value = "AK">AK</option>
@@ -91,19 +91,19 @@
                     <option value = "WY">WY</option>
                 </select>
                 <label for = "zip">Zip:</label>
-                <input type = "text" id = "zip" name = "zip"><br>
+                <input class = "required" type = "text" id = "zip" name = "zip"><br>
                 <label for = "email">Email:</label>
-                <input type = "text" id = "email" name = "email"><br>
+                <input class = "required" type = "text" id = "email" name = "email"><br>
                 <label for = "cell">Cell Phone</label>
-                <input type = "text" id = "cell" name = "cell">
+                <input class = "required" type = "text" id = "cell" name = "cell">
                 <label for = "ethnicity">Ethnicity:</label>
-                <select id = "ethnicity" name = "ethnicity">
+                <select class = "required" id = "ethnicity" name = "ethnicity">
                     <option value = "Prefer Not to Say">Prefer Not to Say</option>
                     <option value = "Hispanic or Latino">Hispanic or Latino</option>
                     <option value = "Not Hispanic or Latino">Not Hispanic or Latino</option>
                 </select>
                 <label for="race">Race:</label>
-                <select id="race" name="race">
+                <select class = "required" id="race" name="race">
                     <option value="Prefer Not to Say">Prefer Not to Say</option>
                     <option value="American Indian or Alaska Native">
                         American Indian or Alaska Native</option>
@@ -115,9 +115,9 @@
                     <option value="Other">Other</option>
                 </select>
                 <label for = "height">Height:</label>
-                <input type = "text" id = "height" name = "height"><br>
+                <input class = "required" type = "text" id = "height" name = "height"><br>
                 <label for = "weight">Weight:</label>
-                <input type = "text" id = "weight" name = "weight"><br>
+                <input class = "required" type = "text" id = "weight" name = "weight"><br>
                 <label for = "notes">Notes:</label>
                 <div>
                     <textarea id = "notes" name = "notes"
