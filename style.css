@@ -45,6 +45,14 @@ a {
     color: #20639b;
 }
 
+#email {
+    color: #33afff;
+}
+
+#email:hover {
+    color: white;
+}
+
 .active {
     color: white;
 }
@@ -78,6 +86,7 @@ a:hover{
 .notes{
     white-space: pre-wrap;
 }
+<<<<<<< HEAD
 .req{
     color:red;
     font-size: 18px;
@@ -128,3 +137,9 @@ a:hover{
     color:red;
 }
 
+=======
+
+input[type=number] {
+    width: 50px;
+}
+>>>>>>> 2277897c85c8407ad8b244c40d94484d29a7c325
