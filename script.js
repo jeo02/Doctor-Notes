@@ -18,14 +18,16 @@ function updateArray(){
         alert("Succesfully submited!");
         document.getElementById("form").reset();
     }
-    alert("Please fill in all the required* fields.");
+    else{
+        alert("Please fill in all the required* fields.");
+    }
+    
 }
 
 function checkRequired()
 {
     var required = document.getElementsByClassName("required");
     for(var i = 0; i < required.length; i++){
-        alert(required.item(i).value);
         if(required.item(i).value() == ""){
             return true;
         }
