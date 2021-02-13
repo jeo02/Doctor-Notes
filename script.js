@@ -54,7 +54,7 @@ function printPatientInfo(){
 
 function bubbleSort(last) 
 {
-    for(var i = 1; i < info.length-1; i++)
+    for(var i = 0; i < info.length-1; i++)
     {
         alert("hi");
         for(var j = 0; j < info.length - i - 1; j++)
