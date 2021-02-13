@@ -67,8 +67,7 @@ a:hover{
 
 .innerPage{
     display: flex;
-    flex:1 1 0;
-    width: 0;
+    flex:1 1 0px;
     text-align: left;    
 }
 
