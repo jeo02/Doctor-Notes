@@ -26,7 +26,10 @@ function updateArray(){
         alert("Succesfully submited!");
         document.getElementById("form").reset();
     }
-    alert("hi");
+    else{
+        alert("Please enter all the required fields.");
+    }
+    
     
 }
 
