@@ -86,6 +86,10 @@ a:hover{
 .notes{
     white-space: pre-wrap;
 }
+
+input[type=number] {
+    width: 50px;
+}
 .req{
     color:red;
     font-size: 18px;
@@ -93,49 +97,6 @@ a:hover{
 .req1{
     color:red;
 }
-.req2{
-    color:red;
-}
-.req3{
-    color:red;
-}
-.req4{
-    color:red;
-}
-.req5{
-    color:red;
-}
-.req6{
-    color:red;
-}
-.req7{
-    color:red;
-}
-.req8{
-    color:red;
-}
-.req9{
-    color:red;
-}
-.req10{
-    color:red;
-}
-.req11{
-    color:red;
-}
-.req12{
-    color:red;
-}
-.req13{
-    color:red;
-}
-.req14{
-    color:red;
-}
-.req15{
-    color:red;
-}
-
 
 input[type=number] {
     width: 50px;

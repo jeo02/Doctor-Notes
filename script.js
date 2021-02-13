@@ -17,6 +17,21 @@ function updateArray(){
     document.getElementById("form").reset();
 }
 
+//Sorts patients by last name
+function sortLastName() {
+
+}
+
+//Sorts patients by ID
+function sortID() {
+
+}
+
+//Sorts patients by state
+function sortState() {
+
+}
+
 function resetList(){
     localStorage.clear();
     location.reload();
