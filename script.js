@@ -46,7 +46,7 @@ function cancel()
 }
 
 //Makes navbar sticky (stays at top)
-var navbar = document.getElementById("navBar");
+/*var navbar = document.getElementById("navBar");
 var sticky = navbar.offsetTop;
 function stickyNavbar() {
     if (window.pageYOffset >= sticky) {
@@ -54,4 +54,4 @@ function stickyNavbar() {
     } else {
       navbar.classList.remove("sticky");
     }
-}
+}*/
