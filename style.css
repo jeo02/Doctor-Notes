@@ -64,3 +64,8 @@ a:hover{
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
+.innerPage{
+    display: flex;
+    justify-content: space-between;
+}
