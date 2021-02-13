@@ -9,11 +9,13 @@
     </head>
 
     <body>
-        <ul class = "navBar">
-            <li class = "navItem"><a href = "index.html">Home</a></li>
-            <li class = "navItem"><a class = "active" href = "survey.html">Patient Information</a></li>
-            <li class = "navItem"><a href = "about.html">About Us</a></li>
+        <h1 class="top">Cool Beans</h1>
+        <ul class="navBar">
+            <li class="navItem"><a href="index.html">Home</a></li>
+            <li class="navItem"><a class="active" href = "survey.html">Patient Information</a></li>
+            <li class="navItem"><a href="about.html">About Us</a></li>
         </ul>
+<<<<<<< HEAD
         <h1>Patient Information</h1>
         <form id = "form">
             <h2 class = "req">* Required Fields</h2>
@@ -201,6 +203,202 @@
             <button onclick = "updateArray()">Submit</button>
             <button onclick = "cancel()">Cancel</button>
         </form>
+=======
+        <div id = "homePage">
+            <h1>Patient Information</h1>
+            <form id = "form">
+                <h2 class = "req">* Required Fields</h2>
+                <div class = "starred1">
+                    <p>
+                        <span class = "req1">*</span>
+                        <span class = "first">First Name: </span>
+                        <input class = "required" type = "text" id = "first" name = "first"><br>
+                </div>
+                <div class = "starred2">
+                    <p>
+                        <span class = "req1">*</span>
+                        <span class = "last">Last Name:</span>
+                        <input class = "required" class = "required" type = "text" id = "last" name = "last"><br>
+                    </p>
+                </div>
+                <div class = "starred3">
+                    <p>
+                        <span class = "req1">*</span>
+                        <span class = "dob">Date of Birth:</span>
+                        <input class = "required" type="date" id="dob" name="dob"><br>
+                    </p>
+                </div>
+                <div class = "starred4">
+                    <p>
+                        <span class = "req1">*</span>
+                        <span class = "gender">Gender:</span>
+                        <select class = "required" id = "gender" name = "gender">
+                            <option value = ""></option>
+                            <option value = "Prefer Not to Say">Prefer Not to Say</option>
+                            <option value = "Male">Male</option>
+                            <option value = "Female">Female</option>
+                            <option value = "Non-Binary">Non-Binary</option>
+                        </select>
+                    </p>
+                </div>
+                <div class = "starred5">
+                    <p>
+                        <span class = "req1">*</span>
+                        <span class = "pid">Patient ID:</span>
+                        <input class = "required" type="text" id="pid" name="pid"><br>
+                    </p>
+                </div>
+                <div class = "starred6">
+                    <p>
+                        <span class = "req1">*</span>
+                        <span class="address">Home Address:</label>
+                        <input class = "required" type="text" id="address" name="address"><br>
+                    </p>
+                </div>
+                <div class = "starred7">
+                    <p>
+                        <span class = "req1">*</span>
+                        <span class="city">City</label>
+                        <input class = "required" type="text" id="city" name="city">
+                    </p>
+                </div>
+                <div class = starred8>
+                    <p>
+                        <span class = "req1">*</span>
+                        <span class="state">State:</label>
+                        <select class = "required" id="state" name="state" placeholder = "--SELECT--">
+                            <option value = ""></option>
+                            <option value = "AL">AL</option>
+                            <option value = "AK">AK</option>
+                            <option value = "AZ">AZ</option>
+                            <option value = "AR">AR</option>
+                            <option value = "CA">CA</option>
+                            <option value = "CO">CO</option>
+                            <option value = "CT">CT</option>
+                            <option value = "DE">DE</option>
+                            <option value = "FL">FL</option>
+                            <option value = "GA">GA</option>
+                            <option value = "HI">HI</option>
+                            <option value = "ID">ID</option>
+                            <option value = "IL">IL</option>
+                            <option value = "IN">IN</option>
+                            <option value = "IA">IA</option>
+                            <option value = "KS">KS</option>
+                            <option value = "KY">KY</option>
+                            <option value = "LA">LA</option>
+                            <option value = "ME">ME</option>
+                            <option value = "MD">MD</option>
+                            <option value = "MA">MA</option>
+                            <option value = "MI">MI</option>
+                            <option value = "MN">MN</option>
+                            <option value = "MS">MS</option>
+                            <option value = "MO">MO</option>
+                            <option value = "MT">MT</option>
+                            <option value = "NE">NE</option>
+                            <option value = "NV">NV</option>
+                            <option value = "NH">NH</option>
+                            <option value = "NJ">NJ</option>
+                            <option value = "NM">NM</option>
+                            <option value = "NY">NY</option>
+                            <option value = "NC">NC</option>
+                            <option value = "ND">ND</option>
+                            <option value = "OH">OH</option>
+                            <option value = "OK">OK</option>
+                            <option value = "OR">OR</option>
+                            <option value = "PA">PA</option>
+                            <option value = "RI">RI</option>
+                            <option value = "SC">SC</option>
+                            <option value = "SD">SD</option>
+                            <option value = "TN">TN</option>
+                            <option value = "TX">TX</option>
+                            <option value = "UT">UT</option>
+                            <option value = "VT">VT</option>
+                            <option value = "VA">VA</option>
+                            <option value = "WA">WA</option>
+                            <option value = "WV">WV</option>
+                            <option value = "WI">WI</option>
+                            <option value = "WY">WY</option>
+                        </select>
+                    </p>
+                </div>
+                <div class = "starred9">
+                    <p>
+                        <span class = "req1">*</span>
+                        <span class = "zip">Zip:</span>
+                        <input class = "required" type = "text" id = "zip" name = "zip">
+                    </p>
+                </div>
+                <div class = "starred10">
+                    <p>
+                        <span class = "req1">*</span>
+                        <span class = "email">Email:</span>
+                        <input class = "required" type = "email" id = "email" name = "email"><br>
+                    </p>
+                </div>
+                <div class = "satrred11">
+                    <p>
+                        <span class = "req1">*</span>
+                        <span class = "cell">Cell Phone:</label>
+                        <input class = "required" type = "tel" id = "cell" name = "cell" placeholder="123-456-7890">
+                    </p>
+                </div>
+                <div class = "starred12">
+                    <p>
+                        <span class = "req1">*</span>
+                        <span class = "ethnicity">Ethnicity:</span>
+                        <select class = "required" id = "ethnicity" name = "ethnicity" placeholder = "--SELECT--">
+                            <option value = ""></option>
+                            <option value = "Prefer Not to Say">Prefer Not to Say</option>
+                            <option value = "Hispanic or Latino">Hispanic or Latino</option>
+                            <option value = "Not Hispanic or Latino">Not Hispanic or Latino</option>
+                            <option value = "Prefer Not to Say">Prefer Not to say</option>
+                        </select>
+                    </p>
+                </div>
+                <div class = "starred13">
+                    <p>
+                        <span class = "req1">*</span>
+                        <span class="race">Race:</span>
+                        <select class = "required" id="race" name="race" placeholder = "--SELECT--"> 
+                            <option value = ""></option>
+                            <option value="Prefer Not to Say">Prefer Not to Say</option>
+                            <option value="American Indian or Alaska Native">
+                                American Indian or Alaska Native</option>
+                            <option value="Asian">Asian</option>
+                            <option value="Black or African America">Black or African American</option>
+                            <option value="Native Hawaiian or Other Pacific Islander">
+                                Native Hawaiian or Other Pacific Islander</option>
+                            <option value="White">White</option>
+                            <option value="Prefer Not to Say">Prefer Not to Say</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </p>
+                </div>
+                <div class = "starred14">
+                    <p>
+                        <span class = "req1">*</span>
+                        <span class = "height">Height (in):</span>
+                        <input class = "required" type = "number" id = "height" name = "height"><br>
+                    </p>
+                </div>
+                <div class = "starred15">
+                    <p>
+                        <span class = "req1">*</span>
+                        <span class = "weight">Weight (lbs):</span>
+                        <input class = "required" type = "number" id = "weight" name = "weight"><br>
+                    </p>
+                </div>
+                <label for = "notes">Notes:</label>
+                <div>
+                    <textarea id = "notes" name = "notes"
+                    rows = "20" cols = "50"></textarea>
+                    
+                    </div>
+                    <button onclick = "updateArray()">Submit</button>
+                    <button onclick = "cancel()">Cancel</button>
+            </form>
+        </div>
+>>>>>>> master
     </body>
     <footer>
         Created by Amelia Orodio, Juan Ospina, Jared Tjahjadi<br>
