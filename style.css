@@ -63,18 +63,17 @@ a:hover{
     border-radius: 25px;
     margin-top: 25px;
     margin-bottom: 25px;
+    align-items: center;
 }
 
 .innerPage{
     display: flex;
-
-}
-
-#title{
-    align-items: center;
 }
 
 .innerP{
     margin-left: 10px;
 }
+
+
+
 
