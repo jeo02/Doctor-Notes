@@ -67,7 +67,7 @@ a:hover{
 
 .innerPage{
     display: flex;
-    
+
 }
 
 #title{
@@ -75,6 +75,6 @@ a:hover{
 }
 
 .innerP{
-    margin: 10px;
+    margin-left: 10px;
 }
 
