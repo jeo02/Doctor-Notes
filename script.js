@@ -27,10 +27,10 @@ function checkRequired()
     for(var i = 0; i < required.length; i++){
         if(required.item(i).value() == ""){
             alert("Please fill in all the required* fields.");
-            return true;
         }
+        return false;
     }
-    return false;
+    return true;
 }
 
 function resetList(){
