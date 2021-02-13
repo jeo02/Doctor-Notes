@@ -61,7 +61,9 @@ function bubbleSort(arr, arr2, last)
         {
             if(last)
             {
-                if(arr2[i-1].split(" * ")[0] < arr2[i].split(" * ")[0])
+                var arrSplit = arr2[i-1].split(" * ");
+                var arrSplit2 = arr2[i].split(" * ");
+                if(arrSplit[0] < arrSplit2[0])
                 {
                     var temp = arr[i-1];
                     arr[i-1] = arr[i];
@@ -73,7 +75,7 @@ function bubbleSort(arr, arr2, last)
                 }
             }
             else{
-                if(arr2[i-1].split(" * ")[1] < arr2[i].split(" * ")[1])
+                if(arrSplit[1] < arrSplit2[1])
                 {
                     var temp = arr[i-1];
                     arr[i-1] = arr[i];
