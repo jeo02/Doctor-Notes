@@ -25,15 +25,20 @@
         <img src=img.png alt="Person filling out patient information form">
         <div id = "homePage">
             <h1 id = "title">Patients</h1>
-                <div id = "innerHome">
-                    <script>
-                        printPatientInfo();
-                    </script>
+            <div class="dropdown">
+                <button onclick="hideShowDropdown()" class="dropbtn">Sort by</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a onclick="sortLastName()" href="#">Last Name</a>
+                  <a onclick="sortID()" href="#">ID</a>
+                  <a onclick="sortByRecent()" href="#">Recent</a>
                 </div>
+              </div>
             <button onclick = "resetList()">Reset List</button>
-            <button onclick = "sortLastName()">Last Name</button>
-            <button onclick = "sortID()">ID</button>
-            <button onclick = "sortByRecent()">Recent</button>
+            <div id = "innerHome">
+                <script>
+                    printPatientInfo();
+                </script>
+            </div>
         </div>
 
         <footer>
