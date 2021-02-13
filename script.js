@@ -56,7 +56,7 @@ function bubbleSort(last)
 {
     for(var i = 1; i < info.length; i++)
     {
-        alert("hi");
+        alert(info.length);
         for(var j = info.length; j < 1; j--)
         {
             var arrSplit = sorters[i-1].split(" * ");
