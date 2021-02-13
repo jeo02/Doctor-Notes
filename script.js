@@ -5,7 +5,16 @@ else
     info = JSON.parse(localStorage.getItem("info"));
 
 function updateArray(){
+    var valid = true;
+    var form = document.getElementsByClassName("required");
+    for(var i = 0; i < form.length; i++)
+    {
+        if(form[i] == ""){
+            valid = false;
+        }
+    }
 
+    if(valid){    
         var curr = "<div class = \"innerPage\"><p>" + "<b>Name:</b> " + document.getElementById("last").value + ", " + document.getElementById("first").value + " <b>DOB:</b> " + document.getElementById("dob").value
         + " <b>Patient ID:</b> " + document.getElementById("pid").value + "<br><b>Gender:</b> " + document.getElementById("gender").value + " <b>Ethnicity:</b> " + document.getElementById("ethnicity").value 
         + "<br><b>Race:</b> " + document.getElementById("race").value + " <b>Height:</b> " + document.getElementById("height").value + "ft <b>Weight:</b> " + document.getElementById("weight").value + " lbs"
@@ -16,7 +25,8 @@ function updateArray(){
         localStorage.setItem("info", JSON.stringify(info));
         alert("Succesfully submited!");
         document.getElementById("form").reset();
-    
+    }
+    alert("hi");
     
 }
 
