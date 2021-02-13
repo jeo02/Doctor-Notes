@@ -23,3 +23,8 @@ footer {
     color: white;
     background-color: black;
 }
+
+body{
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
