@@ -13,20 +13,19 @@
             <li class = "navItem"><a href = "about.html">About Us</a></li>
         </ul>
 
-        <div id = "centerHome">
+        <div id = "homePage">
             <h1>Patients</h1>
-            <div id = "homePage">
                 <script>
                     function printPatientInfo(){
                         var info;
                         if(localStorage.getItem("info") != null){
                             info = JSON.parse(localStorage.getItem("info"));
-                            document.getElementById("homePage").innerHTML = info;
+                            for(var i = 0; i < info.length; i++)
+                                document.getElementById("homePage").innerHTML += info[i];
                         }
                     }
                     printPatientInfo();
                 </script>
-            </div>
             <button onclick = "resetList()">Reset List</button>
         </div>
 
