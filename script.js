@@ -21,12 +21,13 @@ function updateArray(){
 
 function checkRequired()
 {
-    document.getElementsByClassName('required').each(function(){
-        if(this.value() == ""){
+    var required = document.getElementsByClassName('required');
+    for(var i = 0; i < required.length; i++){
+        if(required.item(i).value() == ""){
             alert("Please fill in all the required* fields.");
             return true;
         }
-    })
+    }
     return false;
 }
 
