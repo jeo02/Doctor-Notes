@@ -62,14 +62,12 @@ function bubbleSort(last)
 {
     for(var i = 0; i < info.length-1; i++)
     {
-        alert("hi");
         for(var j = 0; j < info.length - i - 1; j++)
         {
             var arrSplit = sorters[j+1].split(" * ");
             var arrSplit2 = sorters[j].split(" * ");
             if(last)
             {
-                alert("hi");
                 if(arrSplit[0].toUpperCase() < arrSplit2[0].toUpperCase())
                 {
                     
@@ -83,7 +81,7 @@ function bubbleSort(last)
                 }
             }
             else{
-                if(arrSplit[1].toUpperCase() < arrSplit2[1].toUpperCase())
+                if(Number.parseInt(arrSplit[1]) < Number.parseInt(arrSplit2[1]))
                 {
                     var temp = info[j];
                     info[j] = info[j+1];
@@ -101,7 +99,8 @@ function bubbleSort(last)
 
 //Sorts patients by ID
 function sortID() {
-
+    bubbleSort(false);
+    replacePatientInfo();
 }
 
 
