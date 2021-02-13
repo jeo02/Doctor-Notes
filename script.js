@@ -23,6 +23,7 @@ function checkRequired()
 {
     var required = document.getElementsByClassName('required');
     for(var i = 0; i < required.length; i++){
+        alert("hi");
         if(required.item(i).value() == ""){
             alert("Please fill in all the required* fields.");
             return true;
