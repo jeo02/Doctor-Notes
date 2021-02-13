@@ -48,8 +48,7 @@ a:visited {
 
 #centerHome
 {
-    display: flex;
-    justify-content: center;
+    margin: auto;
     background-color: white;
     color: #20639b;
     width: 50%;
