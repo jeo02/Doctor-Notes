@@ -58,11 +58,11 @@ function bubbleSort(last)
     {
         for(var j = info.length; j < 1; j--)
         {
+            alert("hi");
             var arrSplit = sorters[i-1].split(" * ");
             var arrSplit2 = sorters[i].split(" * ");
             if(last)
             {
-                alert("hi");
                 if(arrSplit[0] < arrSplit2[0])
                 {
                     
