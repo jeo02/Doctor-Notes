@@ -12,7 +12,7 @@ function updateArray(){
     document.getElementById("form").reset();
 }
 
-function clear(){
+function resetList(){
     localStorage.clear();
     location.reload();
 }
