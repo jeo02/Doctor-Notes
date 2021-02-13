@@ -60,6 +60,19 @@ a:hover{
     color: white;
 }
 
+#welcome {
+    margin: auto;
+    background-color: white;
+    color: #20639b;
+    width: 50%;
+    padding:10px;
+    border: 5px solid gray;
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
 #homePage
 {
     margin: auto;
@@ -105,4 +118,11 @@ input[type=number] {
 .top {
     text-align: center;
     padding: 50px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
