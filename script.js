@@ -21,8 +21,8 @@ function updateArray(){
 
 function checkRequired()
 {
-    $('.required').each(function(){
-        if($(this).val() == ""){
+    document.getElementsByClassName('required').each(function(){
+        if(this.value() == ""){
             alert("Please fill in all the required* fields.");
         }
         return false;
