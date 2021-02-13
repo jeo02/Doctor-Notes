@@ -17,14 +17,6 @@
         <div id = "homePage">
             <h1 id = "title">Patients</h1>
                 <script>
-                    function printPatientInfo(){
-                        var info;
-                        if(localStorage.getItem("info") != null){
-                            info = JSON.parse(localStorage.getItem("info"));
-                            for(var i = 0; i < info.length; i++)
-                                document.getElementById("homePage").innerHTML += info[i];
-                        }
-                    }
                     printPatientInfo();
                 </script>
             <button onclick = "resetList()">Reset List</button>
