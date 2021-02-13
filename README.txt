@@ -1,2 +1,0 @@
-This project is intended to be a interface for a hospital/clinic to organize patient information. 
-It would include a survey page, a main page where all the patients would be listed, and an about page.
