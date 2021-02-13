@@ -66,9 +66,7 @@ a:hover{
 }
 
 .innerPage{
-    display: flex;
-    flex:1 1 0px;
-    text-align: left;    
+        display: inline-block;
 }
 
 #title{
@@ -76,6 +74,6 @@ a:hover{
 }
 
 .innerP{
-    padding-left: 10px;
+    width: 50%;
 }
 
