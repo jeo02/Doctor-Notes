@@ -24,10 +24,10 @@ function checkRequired()
     document.getElementsByClassName('required').each(function(){
         if(this.value() == ""){
             alert("Please fill in all the required* fields.");
+            return true;
         }
-        return false;
     })
-    return true;
+    return false;
 }
 
 function resetList(){
