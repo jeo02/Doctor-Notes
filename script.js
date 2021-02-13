@@ -1,8 +1,14 @@
 var info;
+var sorters;
 if(localStorage.getItem("info") === null)
     info = new Array();
 else
     info = JSON.parse(localStorage.getItem("info"));
+
+if(localStorage.getItem("sorters") === null)
+    sorters = new Array();
+else
+    sorters = JSON.parse(localStorage.getItem("sorters"));
 
 function updateArray(){
     var valid = true;
@@ -17,11 +23,13 @@ function updateArray(){
     if(valid){    
         var curr = "<div class = \"innerPage\"><p>" + "<b>Name:</b> " + document.getElementById("last").value + ", " + document.getElementById("first").value + " <b>DOB:</b> " + document.getElementById("dob").value
         + " <b>Patient ID:</b> " + document.getElementById("pid").value + "<br><b>Gender:</b> " + document.getElementById("gender").value + " <b>Ethnicity:</b> " + document.getElementById("ethnicity").value 
-        + "<br><b>Race:</b> " + document.getElementById("race").value + " <b>Height:</b> " + document.getElementById("height").value + "ft <b>Weight:</b> " + document.getElementById("weight").value + " lbs"
+        + "<br><b>Race:</b> " + document.getElementById("race").value + " <b>Height:</b> " + document.getElementById("height").value + "in <b>Weight:</b> " + document.getElementById("weight").value + " lbs"
         + "<br><b>Address:</b> " + document.getElementById("address").value + ", " + document.getElementById("city").value + ", " + document.getElementById("state").value + " " + document.getElementById("zip").value
         + "<br><b>Email:</b> " + document.getElementById("email").value + " <b>Cellphone:</b> " + document.getElementById("cell").value + "</p>" + "<p class = \"innerP\"><b>Patient Notes:</b> " + document.getElementById("notes").value + "</p></div>";
     
         info.push(curr);
+        sorters.push(document.getElementById("last").value + " * " + document.getElementById("pid").value);
+        localStorage.setItem("sorters", JSON.stringify(sorters));
         localStorage.setItem("info", JSON.stringify(info));
         alert("Succesfully submited!");
         document.getElementById("form").reset();
@@ -32,39 +40,46 @@ function updateArray(){
 }
 //Sorts patients by last name
 function sortLastName() {
-    var sortedLast = new Array();
-    info = mergeSort(info);
+    bubbleSort(info, sorting, true);
+    localStorage.setItem("info", JSON.stringify(info));
+    localStorage.setItem("sorters", JSON.stringify(sorters));
 }
 
-function merge(left, right){
-    let arr = [];
+function bubbleSort(arr, arr2, last) 
+{
+    for(var i = 1; i < arr.length; i++)
+    {
+        for(var j = arr.length; j < 1; j--)
+        {
+            if(last)
+            {
+                if(arr2[i-1].split(" * ")[0] < arr2[i].split(" * ")[0])
+                {
+                    var temp = arr[i-1];
+                    arr[i-1] = arr[i];
+                    arr[i] = temp;
 
-    //if one of the sides is empty you exit the loop
-    while(left.length && right.length){
-        //get the smallest
-        if(left[0] < right[0]){
-            arr.push(left.shift())
-        }
-        else{
-            arr.push(right.shift())
+                    var temp = arr2[i-1];
+                    arr2[i-1] = arr2[i];
+                    arr2[i] = temp;
+                }
+            }
+            else{
+                if(arr2[i-1].split(" * ")[1] < arr2[i].split(" * ")[1])
+                {
+                    var temp = arr[i-1];
+                    arr[i-1] = arr[i];
+                    arr[i] = temp;
+
+                    var temp = arr2[i-1];
+                    arr2[i-1] = arr2[i];
+                    arr2[i] = temp;
+                }
+            }
         }
     }
-
-    //concatenating leftover elements in case it didnt fully go through left or right
-    return[...arr, ...left, ...right];
 }
 
-function mergeSort(array)
-{
-    const half = array.length/2;
-
-    //base case
-    if(array.length < 2)
-        return array;
-    
-    const left = array.splice(0, half);
-    return merge(mergeSort(left), mergeSort(array));
-}
 
 //Sorts patients by ID
 function sortID() {
