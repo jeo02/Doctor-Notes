@@ -69,7 +69,7 @@ function bubbleSort(last)
             if(last)
             {
                 alert("hi");
-                if(arrSplit[0] < arrSplit2[0])
+                if(arrSplit[0].toUpperCase() < arrSplit2[0].toUpperCase())
                 {
                     
                     var temp = info[j];
@@ -82,7 +82,7 @@ function bubbleSort(last)
                 }
             }
             else{
-                if(arrSplit[1] < arrSplit2[1])
+                if(arrSplit[1].toUpperCase() < arrSplit2[1].toUpperCase())
                 {
                     var temp = info[j];
                     info[j] = info[j+1];
