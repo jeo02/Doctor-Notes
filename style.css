@@ -45,3 +45,16 @@ a {
 a:visited {
     color: white;
 }
+
+#centerHome
+{
+    margin: auto;
+    background-color: white;
+    color: #20639b;
+    width: 50%;
+    padding:10px;
+    border: 5px solid gray;
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
