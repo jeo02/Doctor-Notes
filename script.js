@@ -9,8 +9,8 @@ function updateArray(){
     var form = document.getElementsByClassName("required");
     for(var i = 0; i < form.length; i++)
     {
-        alert(form.item(i).nodeValue);
-        if(form.item(i).nodeValue == ""){
+        alert(form[i].value);
+        if(form[i].value == ""){
             valid = false;
         }
     }
