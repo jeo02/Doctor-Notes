@@ -41,7 +41,6 @@ function updateArray(){
 //Sorts patients by last name
 function sortLastName() {
     bubbleSort(true);
-    alert(sorters[0]);
 }
 
 function printPatientInfo(){
@@ -65,6 +64,7 @@ function bubbleSort(last)
             {
                 if(arrSplit[0] < arrSplit2[0])
                 {
+                    alert("hi");
                     var temp = info[i-1];
                     infoi[i-1] = info[i];
                     info[i] = temp;
