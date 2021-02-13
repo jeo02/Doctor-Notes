@@ -128,7 +128,7 @@ img {
     width: 50%;
 }
 
-@media (max-width : 450px)
+@media (max-width : 600px)
 {
     #homePage{
         width: 90%;
