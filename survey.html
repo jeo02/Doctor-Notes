@@ -116,7 +116,11 @@
             <label for = "weight">Weight:</label>
             <input type = "text" id = "weight" name = "weight"><br>
             <label for = "notes">Notes:</label>
-            <input type = "text" id = "notes" name = "notes">
+            <div>
+                <textarea id = "notes" name = "notes"
+                rows = "20" cols = "50"></textarea>
+                
+            </div>
             <button onclick = "updateArray()">Submit</button>
             <button onclick = "cancel()">Cancel</button>
         </form>
