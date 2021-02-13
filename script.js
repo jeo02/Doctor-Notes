@@ -41,15 +41,19 @@ function updateArray(){
 //Sorts patients by last name
 function sortLastName() {
     bubbleSort(true);
-    printPatientInfo();
+    replacePatientInfo();
 }
 
 function printPatientInfo(){
-    var info;
-    if(localStorage.getItem("info") != null){
-        info = JSON.parse(localStorage.getItem("info"));
-        for(var i = 0; i < info.length; i++)
-            document.getElementById("homePage").innerHTML += info[i];
+    for(var i = 0; i < info.length; i++)
+        document.getElementById("homePage").innerHTML += info[i];
+}
+function replacePatientInfo()
+{
+    document.getElementById("homePage").innerHTML = info[0];
+    for(var i = 1; i < info.length; i++)
+    {
+        document.getElementById("homePage").innerHTML+= info[i];
     }
 }
 
