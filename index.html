@@ -15,9 +15,18 @@
 
         <div>
             <h1>Patient Info</h1>
-            <ul id = "homePage">
-
-            </ul>
+            <div id = "homePage">
+                <script>
+                    function printPatientInfo(){
+                        var info;
+                        if(localStorage.getItem("info") != null){
+                            info = JSON.parse(localStorage.getItem("info"));
+                            document.getElementById("homePage").innerHTML = info;
+                        }
+                    }
+                    printPatientInfo();
+                </script>
+            </div>
         <div>
     </body>
     <footer>

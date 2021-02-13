@@ -7,6 +7,7 @@ else
 function updateArray(){
     var curr = "<p>" + document.getElementById("first") + "</p>" + "<p>" + document.getElementById("last") + "</p>" + "<p>" + document.getElementById("dob") + "</p>";
     info.push(curr);
-    location.reload();
+    localStorage.setItem("info", JSON.stringify(info));
     alert("Succesfully submited!");
+    document.getElementById("form").reset();
 }
