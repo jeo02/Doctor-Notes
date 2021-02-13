@@ -54,37 +54,38 @@ function printPatientInfo(){
 
 function bubbleSort(last) 
 {
-    for(var i = 1; i < info.length; i++)
+    for(var i = 1; i < info.length-1; i++)
     {
-        alert(info.length);
-        for(var j = info.length; j < 1; j--)
+        
+        for(var j = 0; j < info.length - i; j++)
         {
-            var arrSplit = sorters[i-1].split(" * ");
-            var arrSplit2 = sorters[i].split(" * ");
+            var arrSplit = sorters[j+1].split(" * ");
+            var arrSplit2 = sorters[j].split(" * ");
             if(last)
             {
+                alert("hi");
                 if(arrSplit[0] < arrSplit2[0])
                 {
                     
-                    var temp = info[i-1];
-                    infoi[i-1] = info[i];
-                    info[i] = temp;
+                    var temp = info[j+1];
+                    info[j+1] = info[j];
+                    info[j] = temp;
 
-                    var temp = sorters[i-1];
-                    sorters[i-1] = sorters[i];
-                    sorters[i] = temp;
+                    var temp = sorters[j+1];
+                    sorters[j+1] = sorters[j];
+                    sorters[j] = temp;
                 }
             }
             else{
                 if(arrSplit[1] < arrSplit2[1])
                 {
-                    var temp = info[i-1];
-                    infoi[i-1] = info[i];
-                    info[i] = temp;
+                    var temp = info[j+1];
+                    info[j+1] = info[j];
+                    info[j] = temp;
 
-                    var temp = sorters[i-1];
-                    sorters[i-1] = sorters[i];
-                    sorters[i] = temp;
+                    var temp = sorters[j+1];
+                    sorters[j+1] = sorters[j];
+                    sorters[j] = temp;
                 }
             }
         }
