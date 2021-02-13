@@ -23,8 +23,9 @@ function updateArray(){
 
 function checkRequired()
 {
-    var required = document.getElementsByClassName('required');
+    var required = document.getElementsByClassName("required");
     for(var i = 0; i < required.length; i++){
+        alert(required.item(i));
         if(required.item(i).value() == ""){
             return true;
         }
