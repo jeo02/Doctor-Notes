@@ -46,11 +46,11 @@ a {
 }
 
 #email {
-    color: #33afff;
+    color: #173f5f;
 }
 
 #email:hover {
-    color: white;
+    color: #33afff;
 }
 
 .active {
