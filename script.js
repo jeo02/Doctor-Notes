@@ -7,6 +7,7 @@ else
 function updateArray(){
     var valid = true;
     var form = document.getElementsByClassName("required");
+    console.log(form.length);
     for(var i = 0; i < form.length; i++)
     {
         if(form.item(i).nodeValue == ""){
