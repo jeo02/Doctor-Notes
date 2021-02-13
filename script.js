@@ -40,7 +40,7 @@ function updateArray(){
 }
 //Sorts patients by last name
 function sortLastName() {
-    bubbleSort(info, sorting, true);
+    bubbleSort(true);
     printPatientInfo();
 }
 
@@ -53,37 +53,37 @@ function printPatientInfo(){
     }
 }
 
-function bubbleSort(arr, arr2, last) 
+function bubbleSort(last) 
 {
-    for(var i = 1; i < arr.length; i++)
+    for(var i = 1; i < info.length; i++)
     {
-        for(var j = arr.length; j < 1; j--)
+        for(var j = info.length; j < 1; j--)
         {
+            var arrSplit = sorters[i-1].split(" * ");
+            var arrSplit2 = sorters[i].split(" * ");
             if(last)
             {
-                var arrSplit = arr2[i-1].split(" * ");
-                var arrSplit2 = arr2[i].split(" * ");
                 if(arrSplit[0] < arrSplit2[0])
                 {
-                    var temp = arr[i-1];
-                    arr[i-1] = arr[i];
-                    arr[i] = temp;
+                    var temp = info[i-1];
+                    infoi[i-1] = info[i];
+                    info[i] = temp;
 
-                    var temp = arr2[i-1];
-                    arr2[i-1] = arr2[i];
-                    arr2[i] = temp;
+                    var temp = sorters[i-1];
+                    sorters[i-1] = sorters[i];
+                    sorters[i] = temp;
                 }
             }
             else{
                 if(arrSplit[1] < arrSplit2[1])
                 {
-                    var temp = arr[i-1];
-                    arr[i-1] = arr[i];
-                    arr[i] = temp;
+                    var temp = info[i-1];
+                    infoi[i-1] = info[i];
+                    info[i] = temp;
 
-                    var temp = arr2[i-1];
-                    arr2[i-1] = arr2[i];
-                    arr2[i] = temp;
+                    var temp = sorters[i-1];
+                    sorters[i-1] = sorters[i];
+                    sorters[i] = temp;
                 }
             }
         }
