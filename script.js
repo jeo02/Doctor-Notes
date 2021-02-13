@@ -5,7 +5,7 @@ else
     info = JSON.parse(localStorage.getItem("info"));
 
 function updateArray(){
-    if(checkRequired() == true)
+    if(checkRequired() == false)
     {
         var curr = "<div class = \"innerPage\"><p>" + "<b>Name:</b> " + document.getElementById("last").value + ", " + document.getElementById("first").value + " <b>DOB:</b> " + document.getElementById("dob").value
         + " <b>Patient ID:</b> " + document.getElementById("pid").value + "<br><b>Gender:</b> " + document.getElementById("gender").value + " <b>Ethnicity:</b> " + document.getElementById("ethnicity").value 
@@ -18,7 +18,7 @@ function updateArray(){
         alert("Succesfully submited!");
         document.getElementById("form").reset();
     }
-    
+    alert("Please fill in all the required* fields.");
 }
 
 function checkRequired()
@@ -26,11 +26,10 @@ function checkRequired()
     var required = document.getElementsByClassName('required');
     for(var i = 0; i < required.length; i++){
         if(required.item(i).value() == ""){
-            alert("Please fill in all the required* fields.");
+            return true;
         }
-        return false;
     }
-    return true;
+    return false;
 }
 
 function resetList(){
