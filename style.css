@@ -127,3 +127,10 @@ img {
     margin-right: auto;
     width: 50%;
 }
+
+@media (max-width : 450px)
+{
+    #homePage{
+        width: 100%;
+    }
+}
