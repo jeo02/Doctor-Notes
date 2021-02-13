@@ -13,7 +13,8 @@ function updateArray(){
 }
 
 function clear(){
-    localStorage.removeItem("info");
+    localStorage.clear();
+    location.reload();
 }
 
 var navbar = document.getElementById("navBar");
