@@ -118,7 +118,7 @@ input[type=number] {
 .top {
     text-align: center;
     padding: 50px;
-    background-image: linear-gradient(to right, #20639b, purple);
+    background-image: linear-gradient(to right, #20639b, indigo);
 }
 
 img {
