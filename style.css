@@ -1,17 +1,18 @@
 .navBar {
+    width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
+    background-color: #173f5f;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    text-align: center;
 }
 
 .navItem {
-    float: left;
-    display: block;
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -19,12 +20,28 @@
 }
 
 footer {
+    padding: 50px;
     text-align: center;
-    color: white;
-    background-color: black;
+    background-color: #173f5f;
 }
 
-body{
+body {
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 18px;
+    background-color: #20639b;
+    color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
 }
