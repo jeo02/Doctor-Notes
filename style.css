@@ -17,6 +17,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 25px;
 }
 
 footer {
@@ -30,6 +31,7 @@ body {
     font-size: 18px;
     background-color: #20639b;
     color: white;
+    margin: 0;
 }
 
 .sticky {
@@ -40,8 +42,34 @@ body {
 
 a {
     text-decoration: none;
+    color: #20639b;
 }
 
-a:visited {
+.active {
     color: white;
+}
+a:hover{
+    color: white;
+}
+
+#homePage
+{
+    margin: auto;
+    background-color: white;
+    color: #20639b;
+    width: 50%;
+    padding:10px;
+    border: 5px solid gray;
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.innerPage{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 0;
+}
+.req1{
+    color:red
 }

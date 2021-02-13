@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="icon.png">
         <script src = "script.js"></script>
         <title>Home</title>
     </head>
     <body>
         <ul class = "navBar">
-            <li class = "navItem"><a href = "index.html">Home</a></li>
-            <li class = "navItem"><a href = "survey.html">Survey</a></li>
+            <li class = "navItem"><a class = "active" href = "index.html">Home</a></li>
+            <li class = "navItem"><a href = "survey.html">Patient Information</a></li>
             <li class = "navItem"><a href = "about.html">About Us</a></li>
         </ul>
 
-        <div>
+        <div id = "homePage">
             <h1>Patients</h1>
-            <div id = "homePage">
                 <script>
                     function printPatientInfo(){
                         var info;
                         if(localStorage.getItem("info") != null){
                             info = JSON.parse(localStorage.getItem("info"));
-                            document.getElementById("homePage").innerHTML = info;
+                            for(var i = 0; i < info.length; i++)
+                                document.getElementById("homePage").innerHTML += info[i];
                         }
                     }
                     printPatientInfo();
                 </script>
-            </div>
-        <div>
+            <button onclick = "resetList()">Reset List</button>
+        </div>
 
-        <button onclick = "resetList()">Reset List</button>
+        <footer>
+            Created by Amelia Orodio, Juan Ospina, Jared Tjahjadi<br>
+            <a href="https://github.com/jeo02/jeo02.github.io.git">GitHub repository</a> 
+        </footer>    
     </body>
-    <footer>
-        Created by Amelia Orodio, Juan Ospina, Jared Tjahjadi<br>
-        <a href="https://github.com/jeo02/jeo02.github.io.git">GitHub repository</a>
-    </footer>
+    
 </html>
