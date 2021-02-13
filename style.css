@@ -48,11 +48,11 @@ a:visited {
 
 #centerHome
 {
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     background-color: white;
     color: #20639b;
     width: 50%;
     padding:10px;
     border: 5px solid gray;
-    margin:0;
 }
