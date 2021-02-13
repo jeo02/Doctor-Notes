@@ -69,6 +69,8 @@ a:hover{
 .innerPage{
     display: flex;
     text-align: left;
+    flex-basis: 50%;
+    flex-grow: 0;
 }
 
 .innerP{
