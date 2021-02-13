@@ -45,11 +45,32 @@ a {
     color: #20639b;
 }
 
+#email {
+    color: #33afff;
+}
+
+#email:hover {
+    color: white;
+}
+
 .active {
     color: white;
 }
 a:hover{
     color: white;
+}
+
+#welcome {
+    margin: auto;
+    background-color: white;
+    color: #20639b;
+    width: 50%;
+    padding:10px;
+    border: 5px solid gray;
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 #homePage
@@ -63,18 +84,10 @@ a:hover{
     border-radius: 25px;
     margin-top: 25px;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .innerPage{
-<<<<<<< Updated upstream
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 0;
-}
-.req1{
-    color:red
-}
-=======
     display: grid;
     grid-template-columns: 50% 50%;
     text-align: left;
@@ -86,6 +99,10 @@ a:hover{
 .notes{
     white-space: pre-wrap;
 }
+
+input[type=number] {
+    width: 50px;
+}
 .req{
     color:red;
     font-size: 18px;
@@ -93,51 +110,19 @@ a:hover{
 .req1{
     color:red;
 }
-.req2{
-    color:red;
-}
-.req3{
-    color:red;
-}
-.req4{
-    color:red;
-}
-.req5{
-    color:red;
-}
-.req6{
-    color:red;
-}
-.req7{
-    color:red;
-}
-.req8{
-    color:red;
-}
-.req9{
-    color:red;
-}
-.req10{
-    color:red;
-}
-.req11{
-    color:red;
-}
-.req12{
-    color:red;
-}
-.req13{
-    color:red;
-}
-.req14{
-    color:red;
-}
-.req15{
-    color:red;
-}
-
 
 input[type=number] {
     width: 50px;
 }
->>>>>>> Stashed changes
+
+.top {
+    text-align: center;
+    padding: 50px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
