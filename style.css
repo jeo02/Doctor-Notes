@@ -68,6 +68,11 @@ a:hover{
 .innerPage{
     display: flex;
     justify-content: space-between;
-    flex-basis: 0;
+    text-align:start;
+    
+}
+
+#title{
+    align-items: center;
 }
 
