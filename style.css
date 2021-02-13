@@ -86,3 +86,7 @@ a:hover{
 .notes{
     white-space: pre-wrap;
 }
+
+input[type=number] {
+    width: 50px;
+}
