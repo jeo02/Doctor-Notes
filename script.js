@@ -9,7 +9,7 @@ function updateArray(){
     var form = document.getElementsByClassName("required");
     for(var i = 0; i < form.length; i++)
     {
-        if(form.item(i) == ""){
+        if(form.item(i).value() == ""){
             valid = false;
         }
     }
@@ -25,6 +25,7 @@ function updateArray(){
         localStorage.setItem("info", JSON.stringify(info));
         alert("Succesfully submited!");
         document.getElementById("form").reset();
+        return;
     }
     alert("hi");
     
