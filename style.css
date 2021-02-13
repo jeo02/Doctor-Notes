@@ -101,3 +101,8 @@ input[type=number] {
 input[type=number] {
     width: 50px;
 }
+
+.top {
+    text-align: center;
+    padding: 50px;
+}
