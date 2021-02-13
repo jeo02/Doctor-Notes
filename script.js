@@ -103,6 +103,11 @@ function sortID() {
     replacePatientInfo();
 }
 
+function sortByRecent()
+{
+    info = JSON.parse(localStorage.getItem("info"));
+    replacePatientInfo();
+}
 
 function resetList(){
     localStorage.clear();
