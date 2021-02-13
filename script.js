@@ -46,14 +46,15 @@ function sortLastName() {
 
 function printPatientInfo(){
     for(var i = 0; i < info.length; i++)
-        document.getElementById("homePage").innerHTML += info[i];
+        document.getElementById("innerHome").innerHTML += info[i];
 }
+
 function replacePatientInfo()
 {
-    document.getElementById("homePage").innerHTML = info[0];
+    document.getElementById("innerHome").innerHTML = info[0];
     for(var i = 1; i < info.length; i++)
     {
-        document.getElementById("homePage").innerHTML+= info[i];
+        document.getElementById("innerHome").innerHTML+= info[i];
     }
 }
 
