@@ -45,6 +45,14 @@ a {
     color: #20639b;
 }
 
+#email {
+    color: #33afff;
+}
+
+#email:hover {
+    color: white;
+}
+
 .active {
     color: white;
 }
