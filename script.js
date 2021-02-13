@@ -41,7 +41,7 @@ function updateArray(){
 //Sorts patients by last name
 function sortLastName() {
     bubbleSort(true);
-    printPatientInfo();
+    alert(sorters[0]);
 }
 
 function printPatientInfo(){
