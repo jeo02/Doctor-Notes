@@ -62,9 +62,10 @@ function bubbleSort(last)
             var arrSplit2 = sorters[i].split(" * ");
             if(last)
             {
+                alert("hi");
                 if(arrSplit[0] < arrSplit2[0])
                 {
-                    alert("hi");
+                    
                     var temp = info[i-1];
                     infoi[i-1] = info[i];
                     info[i] = temp;
