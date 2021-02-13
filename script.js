@@ -41,8 +41,16 @@ function updateArray(){
 //Sorts patients by last name
 function sortLastName() {
     bubbleSort(info, sorting, true);
-    localStorage.setItem("info", JSON.stringify(info));
-    localStorage.setItem("sorters", JSON.stringify(sorters));
+    printPatientInfo();
+}
+
+function printPatientInfo(){
+    var info;
+    if(localStorage.getItem("info") != null){
+        info = JSON.parse(localStorage.getItem("info"));
+        for(var i = 0; i < info.length; i++)
+            document.getElementById("homePage").innerHTML += info[i];
+    }
 }
 
 function bubbleSort(arr, arr2, last) 
