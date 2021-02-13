@@ -89,11 +89,11 @@
                 <option value = "WY">WY</option>
             </select>
             <label for="zip">Zip:</label>
-            <input type="text" id="zip" name="zip"><br>
+            <input type="text" id="zip" name="zip" maxlength="10" size="10"><br>
             <label for="email">Email:</label>
-            <input type="text" id = "email" name = "email"><br>
+            <input type="email" id="email" name="email"><br>
             <label for="cell">Cell Phone:</label>
-            <input type="tel" id="cell" name="cell" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <input type="tel" id="cell" name="cell" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" size="12">
             <label for="ethnicity">Ethnicity:</label>
             <select id="ethnicity" name="ethnicity">
                 <option value="Prefer Not to Say">Prefer Not to Say</option>
@@ -113,9 +113,9 @@
                 <option value="Other">Other</option>
             </select>
             <label for="height">Height:</label>
-            <input type="text" id="height" name="height"><br>
+            <input type="text" id="height" name="height" maxlength="5" size="5"><br>
             <label for="weight">Weight:</label>
-            <input type="text" id="weight" name="weight"><br>
+            <input type="text" id="weight" name="weight" maxlength="5" size="5"><br>
             <label for="notes">Notes:</label>
             <div>
                 <textarea id="notes" name="notes"
