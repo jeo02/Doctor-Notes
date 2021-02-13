@@ -5,13 +5,16 @@ else
     info = JSON.parse(localStorage.getItem("info"));
 
 function updateArray(){
-    var curr = "<p>" + document.getElementById("first").value + "</p>" + "<p>" + document.getElementById("last") + "</p>" + "<p>" + document.getElementById("dob") + "</p>";
+    var curr = "<p>" + document.getElementById("first").value + "</p>" + "<p>" + document.getElementById("last").value + "</p>" + "<p>" + document.getElementById("dob").value + "</p>";
     info.push(curr);
     localStorage.setItem("info", JSON.stringify(info));
     alert("Succesfully submited!");
     document.getElementById("form").reset();
 }
 
+function clear(){
+    localStorage.removeItem("info");
+}
 
 var navbar = document.getElementById("navBar");
 var sticky = navbar.offsetTop;
