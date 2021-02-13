@@ -21,7 +21,6 @@ function updateArray(){
 
 function checkRequired()
 {
-    alert("hi");
     var required = document.getElementsByClassName('required');
     for(var i = 0; i < required.length; i++){
         if(required.item(i).value() == ""){
