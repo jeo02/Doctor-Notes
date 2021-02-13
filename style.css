@@ -131,6 +131,6 @@ img {
 @media (max-width : 450px)
 {
     #homePage{
-        width: 100%;
+        width: 90%;
     }
 }
