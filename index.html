@@ -22,18 +22,14 @@
         <img src=img.png alt="Person filling out patient information form">
         <div id = "homePage">
             <h1 id = "title">Patients</h1>
-                <script>
-                    function printPatientInfo(){
-                        var info;
-                        if(localStorage.getItem("info") != null){
-                            info = JSON.parse(localStorage.getItem("info"));
-                            for(var i = 0; i < info.length; i++)
-                                document.getElementById("homePage").innerHTML += info[i];
-                        }
-                    }
-                    printPatientInfo();
-                </script>
-            <button onclick="resetList()">Reset List</button>
+                <div id = "innerHome">
+                    <script>
+                        printPatientInfo();
+                    </script>
+                </div>
+            <button onclick = "resetList()">Reset List</button>
+            <button onclick = "sortLastName()">Last Name</button>
+            <button onclick = "sortID()">ID</button>
         </div>
 
         <footer>
