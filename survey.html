@@ -117,7 +117,13 @@
             <label for = "weight">Weight:</label>
             <input type = "text" id = "weight" name = "weight"><br>
             <label for = "notes">Notes:</label>
-            <input type = "text" id = "notes" name = "notes">
+            <div>
+                <textarea id = "notes" name = "notes"></textarea>
+            </div>
+            <div>
+                <button onclick = "updateArray()">Submit</button>
+                <button onclick = "resetList()">Reset List</button>
+                </div>
         </form>
     </body>
     <footer>
