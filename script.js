@@ -68,25 +68,25 @@ function bubbleSort(last)
                 if(arrSplit[0] < arrSplit2[0])
                 {
                     
-                    var temp = info[j+1];
-                    info[j+1] = info[j];
-                    info[j] = temp;
+                    var temp = info[j];
+                    info[j] = info[j+1];
+                    info[j+1] = temp;
 
-                    var temp = sorters[j+1];
-                    sorters[j+1] = sorters[j];
-                    sorters[j] = temp;
+                    var temp = sorters[j];
+                    sorters[j] = sorters[j+1];
+                    sorters[j+1] = temp;
                 }
             }
             else{
                 if(arrSplit[1] < arrSplit2[1])
                 {
-                    var temp = info[j+1];
-                    info[j+1] = info[j];
-                    info[j] = temp;
+                    var temp = info[j];
+                    info[j] = info[j+1];
+                    info[j+1] = temp;
 
-                    var temp = sorters[j+1];
-                    sorters[j+1] = sorters[j];
-                    sorters[j] = temp;
+                    var temp = sorters[j];
+                    sorters[j] = sorters[j+1];
+                    sorters[j+1] = temp;
                 }
             }
         }
