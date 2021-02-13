@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <script src = "script.js"></script>
-        <title>Index</title>
+        <title>Home</title>
     </head>
     <body>
         <ul class = "navBar">
@@ -11,7 +11,28 @@
             <li class = "navItem"><a href = "survey.html">Survey</a></li>
             <li class = "navItem"><a href = "about.html">About Us</a></li>
         </ul>
+<<<<<<< Updated upstream
         <h1>This is an interface that hospitals/clinics can use to organize patient information.</h1>
+=======
+
+        <div>
+            <h1>Patients</h1>
+            <div id = "homePage">
+                <script>
+                    function printPatientInfo(){
+                        var info;
+                        if(localStorage.getItem("info") != null){
+                            info = JSON.parse(localStorage.getItem("info"));
+                            document.getElementById("homePage").innerHTML = info;
+                        }
+                    }
+                    printPatientInfo();
+                </script>
+            </div>
+        <div>
+
+        <button onclick = "resetList()">Reset List</button>
+>>>>>>> Stashed changes
     </body>
     <footer>
         Created by Amelia Orodio, Juan Ospina, Jared Tjahjadi<br>
