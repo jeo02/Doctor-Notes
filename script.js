@@ -9,7 +9,7 @@ function updateArray(){
     var form = document.getElementsByClassName("required");
     for(var i = 0; i < form.length; i++)
     {
-        if(form[i] == ""){
+        if(form.item(i) == ""){
             valid = false;
         }
     }
