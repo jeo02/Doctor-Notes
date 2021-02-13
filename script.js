@@ -27,9 +27,10 @@ function cancel()
     document.getElementById("form").reset();
 }
 
+//Makes navbar sticky (stays at top)
 var navbar = document.getElementById("navBar");
 var sticky = navbar.offsetTop;
-function myFunction() {
+function stickyNavbar() {
     if (window.pageYOffset >= sticky) {
       navbar.classList.add("sticky")
     } else {
