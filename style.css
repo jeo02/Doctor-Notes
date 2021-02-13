@@ -45,3 +45,11 @@ a {
 a:visited {
     color: white;
 }
+
+#homePage
+{
+    width: 50%;
+    padding:10px;
+    border: 2px solid gray;
+    margin:0;
+}
