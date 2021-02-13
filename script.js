@@ -5,7 +5,7 @@ else
     info = JSON.parse(localStorage.getItem("info"));
 
 function updateArray(){
-    if(checkRequired())
+    if(checkRequired() == false)
     {
         alert("Please fill in all the required* fields.");
     }
