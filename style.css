@@ -43,7 +43,10 @@ a {
     text-decoration: none;
 }
 
-a:visited {
+#active {
+    color: white;
+}
+a:hover{
     color: white;
 }
 
